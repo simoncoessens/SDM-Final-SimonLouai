@@ -1,0 +1,367 @@
+@prefix ex: <http://www.gra.fo/schema/untitled-ekg#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+_:n992028ef70d54d429bb6bd7fad7cdfdfb1 a rdfs:Class ;
+    rdfs:member ( ex:Author ex:Reviewer ) .
+
+ex:Affiliation a rdfs:Class ;
+    rdfs:label "Affiliation" ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:Author a rdfs:Class ;
+    rdfs:label "Author" ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+    rdfs:subClassOf ex:Person .
+
+ex:Conference a rdfs:Class ;
+    rdfs:label "Conference" ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+    rdfs:subClassOf ex:Organization .
+
+ex:Edition a rdfs:Class ;
+    rdfs:label "Edition" ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:Journal a rdfs:Class ;
+    rdfs:label "Journal" ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+    rdfs:subClassOf ex:Organization .
+
+ex:Organization a rdfs:Class ;
+    rdfs:label "Organization" ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:Paper a rdfs:Class ;
+    rdfs:label "Paper" ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:Person a rdfs:Class ;
+    rdfs:label "Person" ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:Review a rdfs:Class ;
+    rdfs:label "Review" ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:Reviewer a rdfs:Class ;
+    rdfs:label "Reviewer" ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+    rdfs:subClassOf ex:Person .
+
+ex:Volume a rdfs:Class ;
+    rdfs:label "Volume" ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+<http://www.gra.fo/schema/untitled-ekg#Paper/0704.0003> a ex:Paper ;
+    ex:paper_abstract """The evolution of Earth-Moon system is described by the dark matter field
+fluid model proposed in the Meeting of Division of Particle and Field 2004,
+American Physical Society. The current behavior of the Earth-Moon system agrees
+with this model very well and the general pattern of the evolution of the
+Moon-Earth system described by this model agrees with geological and fossil
+evidence. The closest distance of the Moon to Earth was about 259000 km at 4.5
+billion years ago, which is far beyond the Roche's limit. The result suggests
+that the tidal friction may not be the primary cause for the evolution of the
+Earth-Moon system. The average dark matter field fluid constant derived from
+Earth-Moon system data is 4.39 x 10^(-22) s^(-1)m^(-1). This model predicts
+that the Mars's rotation is also slowing with the angular acceleration rate
+about -4.38 x 10^(-22) rad s^(-2).""" ;
+    ex:paper_id "0704.0003" ;
+    ex:paper_title """The evolution of the Earth-Moon system based on the dark matter field
+  fluid model""" ;
+    ex:related_to_area <http://www.gra.fo/schema/untitled-ekg#Area/physics_gen-ph> ;
+    ex:written_by <http://www.gra.fo/schema/untitled-ekg#Author/hongjun_pan> .
+
+<http://www.gra.fo/schema/untitled-ekg#Paper/0704.0008> a ex:Paper ;
+    ex:paper_abstract """A general formulation was developed to represent material models for
+applications in dynamic loading. Numerical methods were devised to calculate
+response to shock and ramp compression, and ramp decompression, generalizing
+previous solutions for scalar equations of state. The numerical methods were
+found to be flexible and robust, and matched analytic results to a high
+accuracy. The basic ramp and shock solution methods were coupled to solve for
+composite deformation paths, such as shock-induced impacts, and shock
+interactions with a planar interface between different materials. These
+calculations capture much of the physics of typical material dynamics
+experiments, without requiring spatially-resolving simulations. Example
+calculations were made of loading histories in metals, illustrating the effects
+of plastic work on the temperatures induced in quasi-isentropic and
+shock-release experiments, and the effect of a phase transition.""" ;
+    ex:paper_doi "10.1063/1.2975338" ;
+    ex:paper_id "0704.0008" ;
+    ex:paper_title """Numerical solution of shock and ramp compression for general material
+  properties""" ;
+    ex:published_in_journal <http://www.gra.fo/schema/untitled-ekg#Journal/Journal_of_Applied_Physics,_vol_104,_073536_(2008)> ;
+    ex:related_to_area <http://www.gra.fo/schema/untitled-ekg#Area/cond-mat_mtrl-sci> ;
+    ex:written_by <http://www.gra.fo/schema/untitled-ekg#Author/damian_c._swift> .
+
+<http://www.gra.fo/schema/untitled-ekg#Paper/0704.0016> a ex:Paper ;
+    ex:paper_abstract """In this work, we evaluate the lifetimes of the doubly charmed baryons
+$\\Xi_{cc}^{+}$, $\\Xi_{cc}^{++}$ and $\\Omega_{cc}^{+}$. We carefully calculate
+the non-spectator contributions at the quark level where the Cabibbo-suppressed
+diagrams are also included. The hadronic matrix elements are evaluated in the
+simple non-relativistic harmonic oscillator model. Our numerical results are
+generally consistent with that obtained by other authors who used the diquark
+model. However, all the theoretical predictions on the lifetimes are one order
+larger than the upper limit set by the recent SELEX measurement. This
+discrepancy would be clarified by the future experiment, if more accurate
+experiment still confirms the value of the SELEX collaboration, there must be
+some unknown mechanism to be explored.""" ;
+    ex:paper_doi "10.1088/0253-6102/49/4/38" ;
+    ex:paper_id "0704.0016" ;
+    ex:paper_title "Lifetime of doubly charmed baryons" ;
+    ex:published_in_journal <http://www.gra.fo/schema/untitled-ekg#Journal/Commun.Theor.Phys.49:993-1000,2008> ;
+    ex:related_to_area <http://www.gra.fo/schema/untitled-ekg#Area/hep-ph> ;
+    ex:written_by <http://www.gra.fo/schema/untitled-ekg#Author/chao-hsi_chang>,
+        <http://www.gra.fo/schema/untitled-ekg#Author/tong_li>,
+        <http://www.gra.fo/schema/untitled-ekg#Author/xue-qian_li_and_yu-ming_wang> .
+
+ex:aff_email a rdf:Property ;
+    rdfs:label "aff_email" ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:affiliated_with a rdf:Property ;
+    rdfs:label "affiliated_with" ;
+    rdfs:domain _:n992028ef70d54d429bb6bd7fad7cdfdfb1 ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+    rdfs:range ex:Affiliation .
+
+ex:affiliation_address a rdf:Property ;
+    rdfs:label "affiliation_address" ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:affiliation_name a rdf:Property ;
+    rdfs:label "affiliation_name" ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:affiliation_type a rdf:Property ;
+    rdfs:label "affiliation_type" ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:author_email a rdf:Property ;
+    rdfs:label "author_email" ;
+    rdfs:domain ex:Author ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:author_name a rdf:Property ;
+    rdfs:label "author_name" ;
+    rdfs:domain ex:Author ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:cited_by a rdf:Property ;
+    rdfs:label "cited_by" ;
+    rdfs:domain ex:Paper ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+    rdfs:range ex:Paper .
+
+ex:conf_city a rdf:Property ;
+    rdfs:label "conf_city" ;
+    rdfs:domain ex:Conference ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:conf_edition a rdf:Property ;
+    rdfs:label "conf_edition" ;
+    rdfs:domain ex:Conference ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:conf_name a rdf:Property ;
+    rdfs:label "conf_name" ;
+    rdfs:domain ex:Conference ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:conf_ss_venue_id a rdf:Property ;
+    rdfs:label "conf_ss_venue_id" ;
+    rdfs:domain ex:Conference ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:conf_url a rdf:Property ;
+    rdfs:label "conf_url" ;
+    rdfs:domain ex:Conference ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:conf_year a rdf:Property ;
+    rdfs:label "conf_year" ;
+    rdfs:domain ex:Conference ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:edition_no a rdf:Property ;
+    rdfs:label "edition_no" ;
+    rdfs:domain ex:Edition ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:jour_ss_venue_id a rdf:Property ;
+    rdfs:label "jour_ss_venue_id" ;
+    rdfs:domain ex:Journal ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:journal_issn a rdf:Property ;
+    rdfs:label "journal_issn" ;
+    rdfs:domain ex:Journal ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:journal_name a rdf:Property ;
+    rdfs:label "journal_name" ;
+    rdfs:domain ex:Journal ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:journal_url a rdf:Property ;
+    rdfs:label "journal_url" ;
+    rdfs:domain ex:Journal ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:journal_year a rdf:Property ;
+    rdfs:label "journal_year" ;
+    rdfs:domain ex:Journal ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:paper_abstract a rdf:Property ;
+    rdfs:label "paper_abstract" ;
+    rdfs:domain ex:Paper ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:paper_doi a rdf:Property ;
+    rdfs:label "paper_doi" ;
+    rdfs:domain ex:Paper ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:paper_embedding a rdf:Property ;
+    rdfs:label "paper_embedding" ;
+    rdfs:domain ex:Paper ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:paper_keywords a rdf:Property ;
+    rdfs:label "paper_keywords" ;
+    rdfs:domain ex:Paper ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:paper_title a rdf:Property ;
+    rdfs:label "paper_title" ;
+    rdfs:domain ex:Paper ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:paper_year a rdf:Property ;
+    rdfs:label "paper_year" ;
+    rdfs:domain ex:Paper ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:phone_number a rdf:Property ;
+    rdfs:label "phone_number" ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:published_in a rdf:Property ;
+    rdfs:label "published_in" ;
+    rdfs:domain ex:Edition ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+    rdfs:range ex:Conference .
+
+ex:published_in_edition a rdf:Property ;
+    rdfs:label "published_in_edition" ;
+    rdfs:domain ex:Paper ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+    rdfs:range ex:Edition .
+
+ex:published_in_journal a rdf:Property ;
+    rdfs:label "published_in_journal" ;
+    rdfs:domain ex:Volume ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+    rdfs:range ex:Journal .
+
+ex:published_in_volume a rdf:Property ;
+    rdfs:label "published_in_volume" ;
+    rdfs:domain ex:Paper ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+    rdfs:range ex:Volume .
+
+ex:review_abstract a rdf:Property ;
+    rdfs:label "review_abstract" ;
+    rdfs:domain ex:Review ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:review_date a rdf:Property ;
+    rdfs:label "review_date" ;
+    rdfs:domain ex:Review ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:review_decision a rdf:Property ;
+    rdfs:label "review_decision" ;
+    rdfs:domain ex:Review ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:reviewed_by a rdf:Property ;
+    rdfs:label "reviewed_by" ;
+    rdfs:domain ex:Review ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+    rdfs:range ex:Reviewer .
+
+ex:reviewed_on a rdf:Property ;
+    rdfs:label "reviewed_on" ;
+    rdfs:domain ex:Paper ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+    rdfs:range ex:Review .
+
+ex:reviewer_email a rdf:Property ;
+    rdfs:label "reviewer_email" ;
+    rdfs:domain ex:Reviewer ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:reviewer_name a rdf:Property ;
+    rdfs:label "reviewer_name" ;
+    rdfs:domain ex:Reviewer ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:volume_no a rdf:Property ;
+    rdfs:label "volume_no" ;
+    rdfs:domain ex:Volume ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:website a rdf:Property ;
+    rdfs:label "website" ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> .
+
+ex:written_by a rdf:Property ;
+    rdfs:label "written_by" ;
+    rdfs:domain ex:Paper ;
+    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+    rdfs:range ex:Author .
+
+<http://www.gra.fo/schema/untitled-ekg#Area/cond-mat_mtrl-sci> a ex:Area ;
+    ex:Area "cond-mat.mtrl-sci" .
+
+<http://www.gra.fo/schema/untitled-ekg#Area/hep-ph> a ex:Area ;
+    ex:Area "hep-ph" .
+
+<http://www.gra.fo/schema/untitled-ekg#Area/physics_gen-ph> a ex:Area ;
+    ex:Area "physics.gen-ph" .
+
+<http://www.gra.fo/schema/untitled-ekg#Author/chao-hsi_chang> a ex:Author ;
+    ex:author_name "Chao-Hsi Chang" .
+
+<http://www.gra.fo/schema/untitled-ekg#Author/damian_c._swift> a ex:Author ;
+    ex:author_name "Damian C. Swift" .
+
+<http://www.gra.fo/schema/untitled-ekg#Author/hongjun_pan> a ex:Author ;
+    ex:author_name "Hongjun Pan" .
+
+<http://www.gra.fo/schema/untitled-ekg#Author/tong_li> a ex:Author ;
+    ex:author_name "Tong Li" .
+
+<http://www.gra.fo/schema/untitled-ekg#Author/xue-qian_li_and_yu-ming_wang> a ex:Author ;
+    ex:author_name "Xue-Qian Li and Yu-Ming Wang" .
+
+<http://www.gra.fo/schema/untitled-ekg#Journal/Commun.Theor.Phys.49:993-1000,2008> a ex:Journal ;
+    ex:journal_name "Commun.Theor.Phys.49:993-1000,2008" ;
+    ex:journal_volume_issue "49" .
+
+<http://www.gra.fo/schema/untitled-ekg#Journal/Journal_of_Applied_Physics,_vol_104,_073536_(2008)> a ex:Journal ;
+    ex:journal_name "Journal of Applied Physics, vol 104, 073536 (2008)" ;
+    ex:journal_volume_issue "104" .
+
+<http://www.gra.fo/schema/untitled-ekg> a rdfs:Resource ;
+    rdfs:label "SDM-Lab2-TBOX" ;
+    rdfs:comment "" .
+

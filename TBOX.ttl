@@ -1,0 +1,396 @@
+@prefix : <http://www.gra.fo/schema/untitled-ekg#> .
+@prefix gf: <http://www.gra.fo/schema/untitled-ekg#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.gra.fo/schema/untitled-ekg#> .
+
+<http://www.gra.fo/schema/untitled-ekg> rdf:type rdfs:Resource .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.gra.fo/schema/untitled-ekg#affiliated_with
+gf:affiliated_with rdf:type rdf:Property ;
+                   rdfs:domain [ rdf:type rdfs:Class ;
+                                 rdfs:member (gf:Author gf:Reviewer)
+                               ] ;
+                   rdfs:range gf:Affiliation ;
+                   rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                   rdfs:label "affiliated_with" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#cited_by
+gf:cited_by rdf:type rdf:Property ;
+            rdfs:domain gf:Paper ;
+            rdfs:range gf:Paper ;
+            rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+            rdfs:label "cited_by" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#published_in
+gf:published_in rdf:type rdf:Property ;
+                rdfs:domain gf:Edition ;
+                rdfs:range gf:Conference ;
+                rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                rdfs:label "published_in" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#published_in_edition
+gf:published_in_edition rdf:type rdf:Property ;
+                        rdfs:domain gf:Paper ;
+                        rdfs:range gf:Edition ;
+                        rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                        rdfs:label "published_in_edition" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#published_in_journal
+gf:published_in_journal rdf:type rdf:Property ;
+                        rdfs:domain gf:Volume ;
+                        rdfs:range gf:Journal ;
+                        rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                        rdfs:label "published_in_journal" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#published_in_volume
+gf:published_in_volume rdf:type rdf:Property ;
+                       rdfs:domain gf:Paper ;
+                       rdfs:range gf:Volume ;
+                       rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                       rdfs:label "published_in_volume" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#reviewed_by
+gf:reviewed_by rdf:type rdf:Property ;
+               rdfs:domain gf:Review ;
+               rdfs:range gf:Reviewer ;
+               rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+               rdfs:label "reviewed_by" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#reviewed_on
+gf:reviewed_on rdf:type rdf:Property ;
+               rdfs:domain gf:Paper ;
+               rdfs:range gf:Review ;
+               rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+               rdfs:label "reviewed_on" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#written_by
+gf:written_by rdf:type rdf:Property ;
+              rdfs:domain gf:Paper ;
+              rdfs:range gf:Author ;
+              rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+              rdfs:label "written_by" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.gra.fo/schema/untitled-ekg#aff_email
+gf:aff_email rdf:type rdf:Property ;
+             rdfs:domain gf:Affiliation ;
+             rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+             rdfs:label "aff_email" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#affiliation_address
+gf:affiliation_address rdf:type rdf:Property ;
+                       rdfs:domain gf:Affiliation ;
+                       rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                       rdfs:label "affiliation_address" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#affiliation_name
+gf:affiliation_name rdf:type rdf:Property ;
+                    rdfs:domain gf:Affiliation ;
+                    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                    rdfs:label "affiliation_name" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#affiliation_type
+gf:affiliation_type rdf:type rdf:Property ;
+                    rdfs:domain gf:Affiliation ;
+                    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                    rdfs:label "affiliation_type" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#author_email
+gf:author_email rdf:type rdf:Property ;
+                rdfs:domain gf:Author ;
+                rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                rdfs:label "author_email" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#author_name
+gf:author_name rdf:type rdf:Property ;
+               rdfs:domain gf:Author ;
+               rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+               rdfs:label "author_name" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#conf_city
+gf:conf_city rdf:type rdf:Property ;
+             rdfs:domain gf:Conference ;
+             rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+             rdfs:label "conf_city" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#conf_edition
+gf:conf_edition rdf:type rdf:Property ;
+                rdfs:domain gf:Conference ;
+                rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                rdfs:label "conf_edition" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#conf_name
+gf:conf_name rdf:type rdf:Property ;
+             rdfs:domain gf:Conference ;
+             rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+             rdfs:label "conf_name" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#conf_ss_venue_id
+gf:conf_ss_venue_id rdf:type rdf:Property ;
+                    rdfs:domain gf:Conference ;
+                    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                    rdfs:label "conf_ss_venue_id" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#conf_url
+gf:conf_url rdf:type rdf:Property ;
+            rdfs:domain gf:Conference ;
+            rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+            rdfs:label "conf_url" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#conf_year
+gf:conf_year rdf:type rdf:Property ;
+             rdfs:domain gf:Conference ;
+             rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+             rdfs:label "conf_year" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#edition_no
+gf:edition_no rdf:type rdf:Property ;
+              rdfs:domain gf:Edition ;
+              rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+              rdfs:label "edition_no" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#jour_ss_venue_id
+gf:jour_ss_venue_id rdf:type rdf:Property ;
+                    rdfs:domain gf:Journal ;
+                    rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                    rdfs:label "jour_ss_venue_id" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#journal_issn
+gf:journal_issn rdf:type rdf:Property ;
+                rdfs:domain gf:Journal ;
+                rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                rdfs:label "journal_issn" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#journal_name
+gf:journal_name rdf:type rdf:Property ;
+                rdfs:domain gf:Journal ;
+                rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                rdfs:label "journal_name" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#journal_url
+gf:journal_url rdf:type rdf:Property ;
+               rdfs:domain gf:Journal ;
+               rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+               rdfs:label "journal_url" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#journal_year
+gf:journal_year rdf:type rdf:Property ;
+                rdfs:domain gf:Journal ;
+                rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                rdfs:label "journal_year" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#paper_abstract
+gf:paper_abstract rdf:type rdf:Property ;
+                  rdfs:domain gf:Paper ;
+                  rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                  rdfs:label "paper_abstract" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#paper_doi
+gf:paper_doi rdf:type rdf:Property ;
+             rdfs:domain gf:Paper ;
+             rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+             rdfs:label "paper_doi" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#paper_embedding
+gf:paper_embedding rdf:type rdf:Property ;
+                   rdfs:domain gf:Paper ;
+                   rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                   rdfs:label "paper_embedding" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#paper_keywords
+gf:paper_keywords rdf:type rdf:Property ;
+                  rdfs:domain gf:Paper ;
+                  rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                  rdfs:label "paper_keywords" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#paper_title
+gf:paper_title rdf:type rdf:Property ;
+               rdfs:domain gf:Paper ;
+               rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+               rdfs:label "paper_title" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#paper_year
+gf:paper_year rdf:type rdf:Property ;
+              rdfs:domain gf:Paper ;
+              rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+              rdfs:label "paper_year" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#phone_number
+gf:phone_number rdf:type rdf:Property ;
+                rdfs:domain gf:Affiliation ;
+                rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                rdfs:label "phone_number" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#review_abstract
+gf:review_abstract rdf:type rdf:Property ;
+                   rdfs:domain gf:Review ;
+                   rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                   rdfs:label "review_abstract" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#review_date
+gf:review_date rdf:type rdf:Property ;
+               rdfs:domain gf:Review ;
+               rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+               rdfs:label "review_date" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#review_decision
+gf:review_decision rdf:type rdf:Property ;
+                   rdfs:domain gf:Review ;
+                   rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                   rdfs:label "review_decision" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#reviewer_email
+gf:reviewer_email rdf:type rdf:Property ;
+                  rdfs:domain gf:Reviewer ;
+                  rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                  rdfs:label "reviewer_email" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#reviewer_name
+gf:reviewer_name rdf:type rdf:Property ;
+                 rdfs:domain gf:Reviewer ;
+                 rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                 rdfs:label "reviewer_name" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#volume_no
+gf:volume_no rdf:type rdf:Property ;
+             rdfs:domain gf:Volume ;
+             rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+             rdfs:label "volume_no" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#website
+gf:website rdf:type rdf:Property ;
+           rdfs:domain gf:Affiliation ;
+           rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+           rdfs:label "website" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.gra.fo/schema/untitled-ekg#Affiliation
+gf:Affiliation rdf:type rdfs:Class ;
+               rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+               rdfs:label "Affiliation" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#Author
+gf:Author rdf:type rdfs:Class ;
+          rdfs:subClassOf gf:Person ;
+          rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+          rdfs:label "Author" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#Conference
+gf:Conference rdf:type rdfs:Class ;
+              rdfs:subClassOf gf:Organization ;
+              rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+              rdfs:label "Conference" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#Edition
+gf:Edition rdf:type rdfs:Class ;
+           rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+           rdfs:label "Edition" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#Journal
+gf:Journal rdf:type rdfs:Class ;
+           rdfs:subClassOf gf:Organization ;
+           rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+           rdfs:label "Journal" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#Organization
+gf:Organization rdf:type rdfs:Class ;
+                rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+                rdfs:label "Organization" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#Paper
+gf:Paper rdf:type rdfs:Class ;
+         rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+         rdfs:label "Paper" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#Person
+gf:Person rdf:type rdfs:Class ;
+          rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+          rdfs:label "Person" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#Review
+gf:Review rdf:type rdfs:Class ;
+          rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+          rdfs:label "Review" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#Reviewer
+gf:Reviewer rdf:type rdfs:Class ;
+            rdfs:subClassOf gf:Person ;
+            rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+            rdfs:label "Reviewer" .
+
+
+###  http://www.gra.fo/schema/untitled-ekg#Volume
+gf:Volume rdf:type rdfs:Class ;
+          rdfs:isDefinedBy <http://www.gra.fo/schema/untitled-ekg> ;
+          rdfs:label "Volume" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.gra.fo/schema/untitled-ekg> rdfs:comment "" ;
+                                        rdfs:label "SDM-Lab2-TBOX" .
