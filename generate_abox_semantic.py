@@ -342,7 +342,7 @@ for _, row in review_on_df.iterrows():
     )
 
 # Export the graph to Turtle format
-output_ttl_path = 'BDMA11-E-B2-CoessensIslek-ABOX.ttl'
+output_ttl_path = 'Semantic-ABOX.ttl'
 g.serialize(destination=output_ttl_path, format='turtle')
 
 print(f'Graph exported to Turtle format at: {output_ttl_path}')

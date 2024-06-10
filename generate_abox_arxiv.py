@@ -65,5 +65,5 @@ for filename in os.listdir(json_dir):
             add_paper_to_graph_from_json(g, data)
 
 # Serialize and save the graph
-g.serialize(destination='updated-arXiv-data.ttl', format='turtle')
+g.serialize(destination='Arxiv-ABOX.ttl', format='turtle')
 print('Graph updated with arXiv data and exported to Turtle format.')
