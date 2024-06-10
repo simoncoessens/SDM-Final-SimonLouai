@@ -9,18 +9,18 @@ g = Graph()
 g.parse(tbox_path, format='ttl')
 
 # Paths to the actual CSV files
-authors_csv_path = 'data-from-lab1/authors.csv'
-papers_csv_path = 'data-from-lab1/papers_details_enriched.csv'
-affiliations_csv_path = 'data-from-lab1/affiliations.csv'
-author_affiliations_csv_path = 'data-from-lab1/affiliated_with.csv'
-cited_by_csv_path = 'data-from-lab1/citations.csv'
-written_by_csv_path = 'data-from-lab1/written_by_enriched.csv'
-conferences_csv_path = 'data-from-lab1/conferences_enriched.csv'
-journals_csv_path = 'data-from-lab1/journals_enriched.csv'
-published_in_csv_path = 'data-from-lab1/published_in.csv'
-reviews_csv_path = 'data-from-lab1/reviews.csv'
-reviewed_by_csv_path = 'data-from-lab1/reviewed_by.csv'
-review_on_csv_path = 'data-from-lab1/review_on.csv'
+authors_csv_path = 'data/SemanticScholar/authors.csv'
+papers_csv_path = 'data/SemanticScholar/papers_details_enriched.csv'
+affiliations_csv_path = 'data/SemanticScholar/affiliations.csv'
+author_affiliations_csv_path = 'data/SemanticScholar/affiliated_with.csv'
+cited_by_csv_path = 'data/SemanticScholar/citations.csv'
+written_by_csv_path = 'data/SemanticScholar/written_by_enriched.csv'
+conferences_csv_path = 'data/SemanticScholar/conferences_enriched.csv'
+journals_csv_path = 'data/SemanticScholar/journals_enriched.csv'
+published_in_csv_path = 'data/SemanticScholar/published_in.csv'
+reviews_csv_path = 'data/SemanticScholar/reviews.csv'
+reviewed_by_csv_path = 'data/SemanticScholar/reviewed_by.csv'
+review_on_csv_path = 'data/SemanticScholar/review_on.csv'
 
 # Load CSV files into DataFrames
 authors_df = pd.read_csv(authors_csv_path)
